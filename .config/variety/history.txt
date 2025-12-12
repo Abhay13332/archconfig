@@ -1,4 +1,15 @@
 0
+/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-7jjwp3.jpg
+/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-xeey8v.jpg
+/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-e881lw.jpg
+/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55d9q.png
+/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-d88253.png
+/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-lyyko2.jpg
+/usr/share/backgrounds/gnome/adwaita-l.jxl
+/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-mllelk.jpg
+/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-ogg23p.jpg
+/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-d88v3o.jpg
+/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-d88v53.jpg
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-jeey2y.png
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-yqqwvd.jpg
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-8ggkek.png
@@ -23,7 +34,6 @@
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-mll1ry.jpg
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55117.jpg
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-2119yx.jpg
-/usr/share/backgrounds/gnome/adwaita-l.jxl
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-rqqwpw.jpg
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrre3d.jpg
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-8ggwl1.png
@@ -89,13 +99,3 @@
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-211xrg.jpg
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-6lle1w.jpg
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-6llemx.jpg
-/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-jeey9q.jpg
-/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-lyyyv2.png
-/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-lyyv8r.jpg
-/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-vpp1vl.jpg
-/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-e8865l.png
-/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-gww9yl.jpg
-/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-yqq21g.jpg
-/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-poog2e.jpg
-/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-d88z63.jpg
-/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-d88v53.jpg

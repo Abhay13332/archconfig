@@ -38,58 +38,58 @@ color_scheme=6
 
 # Custom color definitions using template variables
 # Main interface colors
-color_background=#121318
-color_text=#e3e2e9
-color_highlight=#b4c5ff
-color_selected=#1e1f25
+color_background=#101418
+color_text=#e0e2e8
+color_highlight=#9dcafc
+color_selected=#1d2024
 
 # CPU meter colors (gradient)
-color_cpu_low=#c8e3ff
-color_cpu_med=#ffecf3
-color_cpu_high=#b3aaff
+color_cpu_low=#b9e6ff
+color_cpu_med=#d0f9f4
+color_cpu_high=#9bb1ff
 
 # Memory meter colors
-color_mem_used=#a3bbff
-color_mem_buffers=#cde1ff
-color_mem_cache=#acc8ff
-color_mem_available=#c8e3ff
+color_mem_used=#8ac1ff
+color_mem_buffers=#c0e4ff
+color_mem_cache=#96cdff
+color_mem_available=#b9e6ff
 
 # Process list colors
-color_process_normal=#e3e2e9
-color_process_running=#c8e3ff
-color_process_sleeping=#8f909a
-color_process_zombie=#b3aaff
-color_process_stopped=#ffecf3
+color_process_normal=#e0e2e8
+color_process_running=#b9e6ff
+color_process_sleeping=#8c9199
+color_process_zombie=#9bb1ff
+color_process_stopped=#d0f9f4
 
 # Header and border colors
-color_header=#c6c6d0
-color_border=#8f909a
-color_separator=#45464f
+color_header=#c2c7cf
+color_border=#8c9199
+color_separator=#42474e
 
 # Function key colors
-color_function_key=#e2bbdb
-color_function_desc=#e3e2e9
+color_function_key=#d5bee5
+color_function_desc=#e0e2e8
 
 # Tree view colors
-color_tree_line=#8f909a
-color_tree_collapsed=#b4c5ff
-color_tree_expanded=#c1c5dd
+color_tree_line=#8c9199
+color_tree_collapsed=#9dcafc
+color_tree_expanded=#bac8da
 
 # Load average colors
-color_load_low=#c8e3ff
-color_load_med=#ffecf3
-color_load_high=#b3aaff
+color_load_low=#b9e6ff
+color_load_med=#d0f9f4
+color_load_high=#9bb1ff
 
 # Priority colors
-color_priority_high=#b3aaff
-color_priority_normal=#e3e2e9
-color_priority_low=#8f909a
+color_priority_high=#9bb1ff
+color_priority_normal=#e0e2e8
+color_priority_low=#8c9199
 
 # Swap meter colors
-color_swap_used=#c0b8f0
+color_swap_used=#b0bcf1
 color_swap_cache=#e0c2f9
 
 # Temperature colors (if enabled)
-color_temp_cool=#c8e3ff
-color_temp_warm=#ffecf3
-color_temp_hot=#b3aaff
+color_temp_cool=#b9e6ff
+color_temp_warm=#d0f9f4
+color_temp_hot=#9bb1ff

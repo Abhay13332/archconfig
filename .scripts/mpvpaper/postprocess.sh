@@ -1,6 +1,7 @@
 #!/bin/bash
 WALLPAPER_PATH=$1
 echo $WALLPAPER_PATH 
+matugen image $WALLPAPER_PATH
 OUTPUT_DIR="${HOME}/Pictures/wallpapersmpvpaper"
 if [[ "$WALLPAPER_PATH" = "$OUTPUT_DIR"* ]]; then
    echo "Using mpvpaper"
