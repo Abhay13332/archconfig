@@ -1,4 +1,5 @@
 0
+/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-3qqgrv.jpg
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-7jjwp3.jpg
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-xeey8v.jpg
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-e881lw.jpg
@@ -98,4 +99,3 @@
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-gww9yl.jpg
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-211xrg.jpg
 /home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-6lle1w.jpg
-/home/abhay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-6llemx.jpg
