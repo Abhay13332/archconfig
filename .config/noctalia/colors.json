@@ -1,0 +1,18 @@
+{
+    "mError": "#e6687c",
+    "mHover": "#ffd970",
+    "mOnError": "#6f4e63",
+    "mOnHover": "#2a1b21",
+    "mOnPrimary": "#f7e2eb",
+    "mOnSecondary": "#2a1b21",
+    "mOnSurface": "#2a1b21",
+    "mOnSurfaceVariant": "#6f4e63",
+    "mOnTertiary": "#fae8f0",
+    "mOutline": "#2a1b21",
+    "mPrimary": "#6f4e63",
+    "mSecondary": "#f2c1d4",
+    "mShadow": "#fceff5",
+    "mSurface": "#f7e6ee",
+    "mSurfaceVariant": "#f9edf3",
+    "mTertiary": "#8f6a7c"
+}
