@@ -38,18 +38,18 @@ color_scheme=6
 
 # Custom color definitions using template variables
 # Main interface colors
-color_background=#1a1112
+color_background=#1a1111
 color_text=#f0dede
-color_highlight=#ffb2b7
-color_selected=#271d1e
+color_highlight=#ffb3b5
+color_selected=#271d1d
 
 # CPU meter colors (gradient)
 color_cpu_low=#ffd8c5
 color_cpu_med=#ffedea
-color_cpu_high=#ff95a2
+color_cpu_high=#ff96a0
 
 # Memory meter colors
-color_mem_used=#fea0cd
+color_mem_used=#ffa0cb
 color_mem_buffers=#ffdb94
 color_mem_cache=#f2b2f2
 color_mem_available=#ffd8c5
@@ -57,39 +57,39 @@ color_mem_available=#ffd8c5
 # Process list colors
 color_process_normal=#f0dede
 color_process_running=#ffd8c5
-color_process_sleeping=#9f8c8d
-color_process_zombie=#ff95a2
+color_process_sleeping=#9f8c8c
+color_process_zombie=#ff96a0
 color_process_stopped=#ffedea
 
 # Header and border colors
-color_header=#d7c1c2
-color_border=#9f8c8d
-color_separator=#524344
+color_header=#d7c1c1
+color_border=#9f8c8c
+color_separator=#524343
 
 # Function key colors
-color_function_key=#e7c08e
+color_function_key=#e6c18d
 color_function_desc=#f0dede
 
 # Tree view colors
-color_tree_line=#9f8c8d
-color_tree_collapsed=#ffb2b7
-color_tree_expanded=#e6bdbe
+color_tree_line=#9f8c8c
+color_tree_collapsed=#ffb3b5
+color_tree_expanded=#e6bdbd
 
 # Load average colors
 color_load_low=#ffd8c5
 color_load_med=#ffedea
-color_load_high=#ff95a2
+color_load_high=#ff96a0
 
 # Priority colors
-color_priority_high=#ff95a2
+color_priority_high=#ff96a0
 color_priority_normal=#f0dede
-color_priority_low=#9f8c8d
+color_priority_low=#9f8c8c
 
 # Swap meter colors
-color_swap_used=#f8aab0
-color_swap_cache=#ffbdb9
+color_swap_used=#f8aaae
+color_swap_cache=#ffbeb8
 
 # Temperature colors (if enabled)
 color_temp_cool=#ffd8c5
 color_temp_warm=#ffedea
-color_temp_hot=#ff95a2
+color_temp_hot=#ff96a0

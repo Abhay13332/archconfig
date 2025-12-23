@@ -49,6 +49,7 @@ mpv --no-audio \
     "$VIDEO_URL" 2>/dev/null
 
 SCREENSHOT=$(ls -t "$OUTPUT_DIR"/*.png 2>/dev/null | head -n1)
+echo "outout-$SCREENSHOT"
 mv "$SCREENSHOT" "$OUTPUT_FILE"
 SOCKET_PATH="/tmp/mpv-socket"
 

@@ -7,3 +7,6 @@ touch /home/jay/.config/variety/pluginconfig/CustomRedditDownloader/credentials.
 read -p "username=" username
 read -p "password=" password
 echo "username=$username\npassword=$password" >  /home/jay/.config/variety/pluginconfig/CustomRedditDownloader/credentials.conf
+
+
+ ln -s ~/.config/rofi/themes/ ~/.local/share/rofi/themes/

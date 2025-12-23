@@ -11,6 +11,9 @@ if status is-interactive
     alias gitbackup="~/.scripts/gitpush.sh"
     alias rm="trash-put"
     alias lively="~/.scripts/mpvpaper/set_video_wallpaper.sh"	
+    alias loginctl="hyprctl dispatch exit && "
+    alias enablegtksudo="xhost +si:localuser:root"
+    alias disablegtksudo="xhost -si:localuser:root"
     # Abbrs
     abbr gd 'git diff'
     abbr ga 'git add .'

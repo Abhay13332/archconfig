@@ -181,14 +181,14 @@
         ]
     },
     "colorSchemes": {
-        "darkMode": false,
+        "darkMode": true,
         "generateTemplatesForPredefined": true,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
-        "matugenSchemeType": "scheme-fidelity",
+        "matugenSchemeType": "scheme-monochrome",
         "predefinedScheme": "Cherry Blossom",
         "schedulingMode": "manual",
-        "useWallpaperColors": false
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [
@@ -404,7 +404,7 @@
         ],
         "showHeader": true
     },
-    "settingsVersion": 26,
+    "settingsVersion": 28,
     "systemMonitor": {
         "cpuCriticalThreshold": 90,
         "cpuPollingInterval": 3000,
@@ -427,23 +427,24 @@
         "alacritty": false,
         "cava": false,
         "code": true,
-        "discord": true,
+        "discord": false,
         "emacs": false,
         "enableUserTemplates": false,
-        "foot": true,
-        "fuzzel": true,
+        "foot": false,
+        "fuzzel": false,
         "ghostty": false,
-        "gtk": true,
-        "kcolorscheme": true,
-        "kitty": true,
+        "gtk": false,
+        "kcolorscheme": false,
+        "kitty": false,
         "niri": false,
         "pywalfox": false,
-        "qt": true,
+        "qt": false,
         "spicetify": false,
         "telegram": false,
         "vicinae": false,
         "walker": false,
-        "wezterm": true
+        "wezterm": true,
+        "yazi": false
     },
     "ui": {
         "fontDefault": "Sans Serif",
@@ -452,7 +453,7 @@
         "fontFixedScale": 1.07,
         "panelBackgroundOpacity": 1,
         "panelsAttachedToBar": true,
-        "settingsPanelAttachToBar": false,
+        "settingsPanelMode": "centered",
         "tooltipsEnabled": true
     },
     "wallpaper": {

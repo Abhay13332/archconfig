@@ -1,0 +1,8 @@
+#!/bin/bash
+if grep -q "dm=gdm" /proc/cmdline; then
+   echo "Starting GDM for Wayland session"
+    systemctl restart gdm
+else
+    echo "Starting SDDM for Wayland session"
+    systemctl restart sddm
+fi

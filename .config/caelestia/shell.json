@@ -67,6 +67,18 @@
                 ],
                 "enabled": true,
                 "dangerous": false
+            },{
+                "name":"set wallpaper link",
+                "description":"change live wallpaper to your choice",
+                "icon":"waves",
+                "command": [
+                    "hyprctl",
+                    "dispatch",
+                    "exec",
+                    "~/.scripts/mpvpaper/set_video_wallpaper.sh"
+                 ],
+                "enabled": true,
+                "dangerous": false
             },
             {
                 "name": "Run Radio",

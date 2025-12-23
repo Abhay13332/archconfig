@@ -27,10 +27,10 @@ gradient_color_1 = '#ffd8c5'
 gradient_color_2 = '#ffdb94'
 gradient_color_3 = '#ebd1ff'
 gradient_color_4 = '#f2b2f2'
-gradient_color_5 = '#fea0cd'
-gradient_color_6 = '#ffb9d3'
-gradient_color_7 = '#ffa7c1'
-gradient_color_8 = '#f8aab0'
+gradient_color_5 = '#ffa0cb'
+gradient_color_6 = '#ffb9d2'
+gradient_color_7 = '#ffa7bf'
+gradient_color_8 = '#f8aaae'
 
 [smoothing]
 # Noise reduction (0-100) - higher = smoother but less responsive
