@@ -1,0 +1,3 @@
+#!/bin/bash
+plymouth quit
+sudo /usr/bin/systemctl start greetd.service
