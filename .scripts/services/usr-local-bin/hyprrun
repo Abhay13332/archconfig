@@ -1,0 +1,4 @@
+#! /bin/bash
+output=$(echo "cd $PWD && $@" | socat - /tmp/hypr-trigger.sock; )
+echo "$(tail -n +4 <<< "$output")"
+

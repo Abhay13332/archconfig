@@ -1,10 +1,10 @@
 #!/bin/bash
 
 DOWNLOADS_DIR="$HOME/Downloads"
-WALLPAPER_DIR="$HOME/Pictures/Wallpapers"
+PICTURES_DIR="$HOME/Downloads/Pictures"
 
 # Create required directories
-mkdir -p "$WALLPAPER_DIR"
+mkdir -p "$PICTURES_DIR"
 mkdir -p "$DOWNLOADS_DIR/Documents" "$DOWNLOADS_DIR/Videos" "$DOWNLOADS_DIR/Music"
 mkdir -p "$DOWNLOADS_DIR/Archives" "$DOWNLOADS_DIR/Scripts" "$DOWNLOADS_DIR/Others"
 
@@ -52,8 +52,8 @@ do
 
     case "$EXT_LOWER" in
         jpg|jpeg|png)
-            echo "Moving image: $FILE → $WALLPAPER_DIR"
-            mv "$SRC_PATH" "$WALLPAPER_DIR/"
+            echo "Moving image: $FILE → $PICTURES_DIR"
+            mv "$SRC_PATH" "$PICTURES_DIR/"
             ;;
         pdf|doc|docx|txt|ppt|pptx|xls|xlsx|odt|odp)
             echo "Moving document: $FILE → Documents"

@@ -11,7 +11,7 @@ echo "Extracting frame at ${TIMESTAMP} seconds..."
 mpv --no-audio \
     --start="$TIMESTAMP" \
     --frames=1 \
-    --vo=image \
+    --vo=image \xxxxxxxxx
     --vo-image-format=png \
     --vo-image-outdir="$OUTPUT_DIR" \
     "$VIDEO_FILE" 2>/dev/null

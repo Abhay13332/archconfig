@@ -40,14 +40,14 @@ PanelWindow {
         // 2. Watch directory
         command: ["sh", "-c", "
             extract() { 
-                bg=$(grep '^\\$background =' /home/jay/.config/hypr/scheme/current.conf | cut -d'=' -f2 | tr -d ' ')
-                fg=$(grep '^\\$primary =' /home/jay/.config/hypr/scheme/current.conf | cut -d'=' -f2 | tr -d ' ')
+                bg=$(grep '^\\$background =' ~/.config/hypr/scheme/current.conf | cut -d'=' -f2 | tr -d ' ')
+                fg=$(grep '^\\$primary =' ~/.config/hypr/scheme/current.conf | cut -d'=' -f2 | tr -d ' ')
                 res=$(hyprctl monitors -j | jq -r '.[0] | \"\\(.width) \\(.height)\"')
-                coords=$(python3 /home/jay/tmptasks/experiment/newsomething/auto_position.py $res)
+                coords=$(python3 ~/.config/quickshell/auto_position.py $res)
                 echo \"$bg $fg $coords\"
             }
             extract
-            inotifywait -m -e close_write -q --format '%f' /home/jay/.config/hypr/scheme/ | while read -r file; do
+            inotifywait -m -e close_write -q --format '%f' ~/.config/hypr/scheme/ | while read -r file; do
                 if [ \"$file\" = \"current.conf\" ]; then extract; fi
             done
         "]

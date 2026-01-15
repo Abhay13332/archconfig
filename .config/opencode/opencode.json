@@ -1,0 +1,8 @@
+{
+  "plugin": [
+    "oh-my-opencode"
+  ],
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "autotask-agent",
+    
+}

@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# IMPORTANT: do NOT use `set -e`
+handle_command='
+#!/usr/bin/env bash
+IFS= read -r CMD || exit 0
+
+TARGET_USER="abhay"
+
+loginctl enable-linger "$TARGET_USER"  || true
+
+
+
+ runuser -u "$TARGET_USER" -- \
+  systemd-run --user --no-block \
+    /usr/bin/bash -lc "$CMD" \
+    
+
+
+
+'
+
+SOCKET_PATH="/tmp/hypr-trigger.sock"
+
+if [ -e "$SOCKET_PATH" ]; then
+    rm "$SOCKET_PATH"
+fi
+socat UNIX-LISTEN:"$SOCKET_PATH",fork,reuseaddr SYSTEM:"bash -c '$handle_command'",stderr

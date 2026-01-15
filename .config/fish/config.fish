@@ -44,3 +44,6 @@ if status is-interactive
         echo -en "\e]133;A\e\\"
     end
 end
+
+# opencode
+fish_add_path /home/abhay/.opencode/bin

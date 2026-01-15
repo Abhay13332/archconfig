@@ -33,7 +33,6 @@
 # In the end put the path to the actual final wallpaper image file in the WP variable.
 # The default is to simply set WP=$1.
 WP=$1
-
 detect_desktop() {
     if [ -n "$XDG_CURRENT_DESKTOP" ]; then
         case "${XDG_CURRENT_DESKTOP,,}" in
@@ -186,9 +185,9 @@ elif [ "$DE" == "gnome" ] || [ "$DE" == "unity" ]; then
     if [[ "$4" =~ ^(wallpaper|centered|scaled|stretched|zoom|spanned)$ ]]; then
         gsettings set org.gnome.desktop.screensaver picture-options "$4"
     fi
-    # if [ "$(gsettings get org.gnome.desktop.screensaver picture-options)" == "'none'" ]; then
+    if [ "$(gsettings get org.gnome.desktop.screensaver picture-options)" == "'none'" ]; then
         gsettings set org.gnome.desktop.screensaver picture-options 'zoom'
-    # fi
+    fi
 
 elif [ "$DE" == "deepin" ]; then
     # Deepin
@@ -290,6 +289,7 @@ else
         nitrogen --set-zoom-fill --save "$WP" 2>/dev/null
     fi
 fi
-filepath=$(cat /home/$(echo $USER)/.config/variety/wallpaper/wallpaper.jpg.txt)
+filepath=$(cat ~/.config/variety/wallpaper/wallpaper.jpg.txt)
 caelestia wallpaper -f "$filepath"
+
 exit 0

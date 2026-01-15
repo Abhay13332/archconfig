@@ -1,0 +1,11 @@
+[Unit]
+Description=Hyprland command trigger socket
+
+[Socket]
+ListenStream=/run/hypr-trigger.sock
+SocketMode=0660
+SocketUser=root
+SocketGroup=users
+
+[Install]
+WantedBy=sockets.target

@@ -1,11 +1,11 @@
 #!/bin/bash
 if grep -q "dm=gdm" /proc/cmdline; then
-   echo "Starting GDM for Wayland session"
-    systemctl restart gdm
-    sudo plymouth quit
+  echo "Starting GDM for Wayland session"
+  systemctl restart gdm
+  sudo plymouth quit
 elif grep -q "dm=sddm" /proc/cmdline; then
-    echo "Starting SDDM for Wayland session"
-    systemctl restart sddm
-    sleep 1
-    sudo plymouth quit
-fi 
+  echo "Starting SDDM for Wayland session"
+  systemctl restart sddm
+  sleep 1
+  sudo plymouth quit
+fi

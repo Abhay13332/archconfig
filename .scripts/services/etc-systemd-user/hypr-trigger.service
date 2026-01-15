@@ -1,0 +1,15 @@
+[Unit]
+Description=Hyprland trigger listener 
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/hypr-trigger-listener
+
+
+Restart=on-failure
+RestartSec=2
+
+
+[Install]
+WantedBy=graphical-session.target

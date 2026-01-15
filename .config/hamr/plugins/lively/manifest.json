@@ -1,0 +1,8 @@
+{
+    "name": "Lively",
+    "description": "Run lively command with a file path",
+    "icon": "wallpaper",
+    "supportedCompositors": [
+        "*"
+    ]
+}

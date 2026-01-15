@@ -1,2 +1,6 @@
 [soe][BassEnhancer#0]
-outputGain=1.48
+amount=0.9
+blend=6
+floor=24
+inputGain=0.26
+outputGain=2.93
