@@ -1,13 +1,22 @@
 {
     "appLauncher": {
+        "autoPasteClipboard": false,
+        "clipboardWatchImageCommand": "wl-paste --type image --watch cliphist store",
+        "clipboardWatchTextCommand": "wl-paste --type text --watch cliphist store",
+        "clipboardWrapText": true,
         "customLaunchPrefix": "",
         "customLaunchPrefixEnabled": false,
         "enableClipPreview": true,
-        "enableClipboardHistory": false,
-        "pinnedExecs": [
+        "enableClipboardHistory": true,
+        "enableSettingsSearch": true,
+        "iconMode": "tabler",
+        "ignoreMouseInput": false,
+        "pinnedApps": [
         ],
         "position": "center",
+        "screenshotAnnotationTool": "",
         "showCategories": true,
+        "showIconBackground": false,
         "sortByMostUsed": true,
         "terminalCommand": "xterm -e",
         "useApp2Unit": false,
@@ -15,43 +24,65 @@
     },
     "audio": {
         "cavaFrameRate": 30,
-        "externalMixer": "pwvucontrol || pavucontrol",
         "mprisBlacklist": [
         ],
         "preferredPlayer": "",
-        "visualizerQuality": "high",
-        "visualizerType": "linear",
+        "visualizerType": "wave",
+        "volumeFeedback": false,
         "volumeOverdrive": false,
         "volumeStep": 5
     },
     "bar": {
-        "backgroundOpacity": 1,
-        "capsuleOpacity": 0.66,
-        "density": "comfortable",
+        "backgroundOpacity": 0,
+        "barType": "floating",
+        "capsuleOpacity": 0.6900000000000001,
+        "density": "compact",
         "exclusive": true,
-        "floating": false,
-        "marginHorizontal": 0.25,
-        "marginVertical": 0.25,
+        "floating": true,
+        "frameRadius": 12,
+        "frameThickness": 8,
+        "hideOnOverview": false,
+        "marginHorizontal": 5,
+        "marginVertical": 4,
         "monitors": [
         ],
         "outerCorners": true,
-        "position": "left",
+        "position": "top",
+        "screenOverrides": [
+        ],
         "showCapsule": true,
+        "showOutline": false,
+        "useSeparateOpacity": true,
         "widgets": {
             "center": [
                 {
                     "characterCount": 2,
+                    "colorizeIcons": false,
+                    "emptyColor": "secondary",
+                    "enableScrollWheel": true,
+                    "focusedColor": "primary",
                     "followFocusedScreen": false,
+                    "groupedBorderOpacity": 1,
                     "hideUnoccupied": false,
+                    "iconScale": 0.8,
                     "id": "Workspace",
-                    "labelMode": "index"
+                    "labelMode": "index",
+                    "occupiedColor": "secondary",
+                    "reverseScroll": false,
+                    "showApplications": false,
+                    "showBadge": true,
+                    "showLabelsOnlyWhenOccupied": true,
+                    "unfocusedIconsOpacity": 1
                 }
             ],
             "left": [
                 {
+                    "colorizeSystemIcon": "none",
+                    "enableColorization": false,
                     "hideMode": "alwaysExpanded",
                     "icon": "rocket",
                     "id": "CustomButton",
+                    "ipcIdentifier": "",
                     "leftClickExec": "qs -c noctalia-shell ipc call launcher toggle",
                     "leftClickUpdateText": false,
                     "maxTextLength": {
@@ -81,6 +112,7 @@
                     "formatHorizontal": "HH:mm ddd, MMM dd",
                     "formatVertical": "HH mm - dd MM",
                     "id": "Clock",
+                    "tooltipFormat": "HH:mm ddd, MMM dd",
                     "useCustomFont": false,
                     "usePrimaryColor": false
                 },
@@ -94,10 +126,15 @@
                     "useFixedWidth": false
                 },
                 {
+                    "compactMode": false,
+                    "compactShowAlbumArt": true,
+                    "compactShowVisualizer": false,
                     "hideMode": "hidden",
                     "hideWhenIdle": false,
                     "id": "MediaMini",
                     "maxWidth": 145,
+                    "panelShowAlbumArt": true,
+                    "panelShowVisualizer": true,
                     "scrollingMode": "hover",
                     "showAlbumArt": false,
                     "showArtistFirst": true,
@@ -109,13 +146,11 @@
             ],
             "right": [
                 {
-                    "id": "ScreenRecorder"
-                },
-                {
                     "blacklist": [
                     ],
                     "colorizeIcons": false,
                     "drawerEnabled": true,
+                    "hidePassive": false,
                     "id": "Tray",
                     "pinned": [
                         "nm-applet",
@@ -123,13 +158,20 @@
                     ]
                 },
                 {
+                    "id": "NoctaliaPerformance"
+                },
+                {
                     "hideWhenZero": true,
+                    "hideWhenZeroUnread": false,
                     "id": "NotificationHistory",
-                    "showUnreadBadge": true
+                    "showUnreadBadge": true,
+                    "unreadBadgeColor": "primary"
                 },
                 {
                     "deviceNativePath": "",
                     "displayMode": "onhover",
+                    "hideIfIdle": false,
+                    "hideIfNotDetected": true,
                     "id": "Battery",
                     "showNoctaliaPerformance": false,
                     "showPowerProfiles": false,
@@ -137,7 +179,8 @@
                 },
                 {
                     "displayMode": "onhover",
-                    "id": "Volume"
+                    "id": "Volume",
+                    "middleClickCommand": "pwvucontrol || pavucontrol"
                 },
                 {
                     "displayMode": "onhover",
@@ -151,6 +194,37 @@
                     "icon": "noctalia",
                     "id": "ControlCenter",
                     "useDistroLogo": false
+                },
+                {
+                    "colorizeSystemIcon": "none",
+                    "enableColorization": false,
+                    "hideMode": "alwaysExpanded",
+                    "icon": "align-box-bottom-center-filled",
+                    "id": "CustomButton",
+                    "ipcIdentifier": "",
+                    "leftClickExec": "",
+                    "leftClickUpdateText": false,
+                    "maxTextLength": {
+                        "horizontal": 10,
+                        "vertical": 10
+                    },
+                    "middleClickExec": "",
+                    "middleClickUpdateText": false,
+                    "parseJson": false,
+                    "rightClickExec": "",
+                    "rightClickUpdateText": false,
+                    "showIcon": true,
+                    "textCollapse": "",
+                    "textCommand": "",
+                    "textIntervalMs": 3000,
+                    "textStream": false,
+                    "wheelDownExec": "",
+                    "wheelDownUpdateText": false,
+                    "wheelExec": "",
+                    "wheelMode": "unified",
+                    "wheelUpExec": "",
+                    "wheelUpUpdateText": false,
+                    "wheelUpdateText": false
                 }
             ]
         }
@@ -172,20 +246,16 @@
             },
             {
                 "enabled": true,
-                "id": "timer-card"
-            },
-            {
-                "enabled": true,
                 "id": "weather-card"
             }
         ]
     },
     "colorSchemes": {
-        "darkMode": true,
-        "generateTemplatesForPredefined": true,
+        "darkMode": false,
+        "generationMethod": "tonal-spot",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
-        "matugenSchemeType": "scheme-monochrome",
+        "monitorForColors": "",
         "predefinedScheme": "Cherry Blossom",
         "schedulingMode": "manual",
         "useWallpaperColors": true
@@ -213,17 +283,15 @@
                 "id": "media-sysmon-card"
             }
         ],
+        "diskPath": "/",
         "position": "close_to_bar_button",
         "shortcuts": {
             "left": [
                 {
-                    "id": "WiFi"
+                    "id": "Network"
                 },
                 {
                     "id": "Bluetooth"
-                },
-                {
-                    "id": "ScreenRecorder"
                 },
                 {
                     "id": "WallpaperSelector"
@@ -245,7 +313,19 @@
             ]
         }
     },
+    "desktopWidgets": {
+        "enabled": true,
+        "gridSnap": false,
+        "monitorWidgets": [
+            {
+                "name": "eDP-1",
+                "widgets": [
+                ]
+            }
+        ]
+    },
     "dock": {
+        "animationSpeed": 1,
         "backgroundOpacity": 1,
         "colorizeIcons": false,
         "deadOpacity": 0.6,
@@ -259,40 +339,55 @@
         "pinnedApps": [
         ],
         "pinnedStatic": false,
+        "position": "bottom",
         "size": 1
     },
     "general": {
         "allowPanelsOnScreenWithoutBar": true,
+        "allowPasswordWithFprintd": false,
         "animationDisabled": false,
         "animationSpeed": 1,
+        "autoStartAuth": false,
         "avatarImage": "/home/abhay/.face",
         "boxRadiusRatio": 1,
         "compactLockScreen": false,
         "dimmerOpacity": 0.6,
+        "enableLockScreenCountdown": true,
         "enableShadows": true,
         "forceBlackScreenCorners": false,
         "iRadiusRatio": 1,
         "language": "",
         "lockOnSuspend": true,
+        "lockScreenCountdownDuration": 10000,
         "radiusRatio": 1,
         "scaleRatio": 1,
         "screenRadiusRatio": 1,
         "shadowDirection": "bottom_right",
         "shadowOffsetX": 2,
         "shadowOffsetY": 3,
+        "showChangelogOnStartup": true,
         "showHibernateOnLockScreen": false,
         "showScreenCorners": false,
-        "showSessionButtonsOnLockScreen": true
+        "showSessionButtonsOnLockScreen": true,
+        "telemetryEnabled": false
     },
     "hooks": {
         "darkModeChange": "",
         "enabled": false,
+        "performanceModeDisabled": "",
+        "performanceModeEnabled": "",
+        "screenLock": "",
+        "screenUnlock": "",
+        "session": "",
+        "startup": "",
         "wallpaperChange": ""
     },
     "location": {
         "analogClockInCalendar": false,
         "firstDayOfWeek": -1,
-        "name": "Tokyo",
+        "hideWeatherCityName": false,
+        "hideWeatherTimezone": false,
+        "name": "patna",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": false,
@@ -302,6 +397,11 @@
         "weatherShowEffects": true
     },
     "network": {
+        "bluetoothDetailsViewMode": "grid",
+        "bluetoothHideUnnamedDevices": false,
+        "bluetoothRssiPollIntervalMs": 10000,
+        "bluetoothRssiPollingEnabled": false,
+        "wifiDetailsViewMode": "grid",
         "wifiEnabled": true
     },
     "nightLight": {
@@ -317,6 +417,7 @@
         "backgroundOpacity": 1,
         "criticalUrgencyDuration": 15,
         "enableKeyboardLayoutToast": true,
+        "enableMediaToast": false,
         "enabled": true,
         "location": "top_right",
         "lowUrgencyDuration": 3,
@@ -325,6 +426,11 @@
         "normalUrgencyDuration": 8,
         "overlayLayer": true,
         "respectExpireTimeout": false,
+        "saveToHistory": {
+            "critical": true,
+            "low": true,
+            "normal": true
+        },
         "sounds": {
             "criticalSoundFile": "",
             "enabled": false,
@@ -349,20 +455,11 @@
         ],
         "overlayLayer": true
     },
-    "screenRecorder": {
-        "audioCodec": "opus",
-        "audioSource": "default_output",
-        "colorRange": "limited",
-        "directory": "/home/abhay/Videos",
-        "frameRate": 60,
-        "quality": "very_high",
-        "showCursor": true,
-        "videoCodec": "h264",
-        "videoSource": "portal"
-    },
     "sessionMenu": {
         "countdownDuration": 10000,
         "enableCountdown": true,
+        "largeButtonsLayout": "grid",
+        "largeButtonsStyle": false,
         "position": "center",
         "powerOptions": [
             {
@@ -402,9 +499,10 @@
                 "enabled": true
             }
         ],
-        "showHeader": true
+        "showHeader": true,
+        "showNumberLabels": true
     },
-    "settingsVersion": 28,
+    "settingsVersion": 46,
     "systemMonitor": {
         "cpuCriticalThreshold": 90,
         "cpuPollingInterval": 3000,
@@ -413,10 +511,18 @@
         "diskCriticalThreshold": 90,
         "diskPollingInterval": 3000,
         "diskWarningThreshold": 80,
+        "enableDgpuMonitoring": false,
+        "externalMonitor": "resources || missioncenter || jdsystemmonitor || corestats || system-monitoring-center || gnome-system-monitor || plasma-systemmonitor || mate-system-monitor || ukui-system-monitor || deepin-system-monitor || pantheon-system-monitor",
+        "gpuCriticalThreshold": 90,
+        "gpuPollingInterval": 3000,
+        "gpuWarningThreshold": 80,
+        "loadAvgPollingInterval": 3000,
         "memCriticalThreshold": 90,
         "memPollingInterval": 3000,
         "memWarningThreshold": 80,
         "networkPollingInterval": 3000,
+        "swapCriticalThreshold": 90,
+        "swapWarningThreshold": 80,
         "tempCriticalThreshold": 90,
         "tempPollingInterval": 3000,
         "tempWarningThreshold": 80,
@@ -424,39 +530,35 @@
         "warningColor": ""
     },
     "templates": {
-        "alacritty": false,
-        "cava": false,
-        "code": true,
-        "discord": false,
-        "emacs": false,
-        "enableUserTemplates": false,
-        "foot": false,
-        "fuzzel": false,
-        "ghostty": false,
-        "gtk": false,
-        "kcolorscheme": false,
-        "kitty": false,
-        "niri": false,
-        "pywalfox": false,
-        "qt": false,
-        "spicetify": false,
-        "telegram": false,
-        "vicinae": false,
-        "walker": false,
-        "wezterm": true,
-        "yazi": false
+        "activeTemplates": [
+            {
+                "enabled": true,
+                "id": "wezterm"
+            },
+            {
+                "enabled": true,
+                "id": "code"
+            }
+        ],
+        "enableUserTheming": false
     },
     "ui": {
+        "bluetoothDetailsViewMode": "grid",
+        "bluetoothHideUnnamedDevices": false,
+        "boxBorderEnabled": false,
         "fontDefault": "Sans Serif",
         "fontDefaultScale": 1.09,
         "fontFixed": "monospace",
         "fontFixedScale": 1.07,
+        "networkPanelView": "wifi",
         "panelBackgroundOpacity": 1,
         "panelsAttachedToBar": true,
         "settingsPanelMode": "centered",
-        "tooltipsEnabled": true
+        "tooltipsEnabled": true,
+        "wifiDetailsViewMode": "grid"
     },
     "wallpaper": {
+        "automationEnabled": true,
         "directory": "/home/abhay/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
@@ -467,21 +569,26 @@
         ],
         "overviewEnabled": false,
         "panelPosition": "follow_bar",
-        "randomEnabled": true,
         "randomIntervalSec": 7200,
-        "recursiveSearch": false,
         "setWallpaperOnAllMonitors": true,
+        "showHiddenFiles": false,
+        "solidColor": "#1a1a2e",
         "transitionDuration": 1500,
         "transitionEdgeSmoothness": 0.06,
         "transitionType": "disc",
-        "useWallhaven": true,
+        "useSolidColor": false,
+        "useWallhaven": false,
+        "viewMode": "single",
+        "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
         "wallhavenQuery": "anime",
+        "wallhavenRatios": "",
         "wallhavenResolutionHeight": "",
         "wallhavenResolutionMode": "atleast",
         "wallhavenResolutionWidth": "",
-        "wallhavenSorting": "toplist"
+        "wallhavenSorting": "toplist",
+        "wallpaperChangeMode": "random"
     }
 }

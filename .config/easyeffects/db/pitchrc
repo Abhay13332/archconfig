@@ -1,2 +1,5 @@
 [soe][Pitch#0]
-outputGain=-0.43
+inputGain=1.18
+octaves=1
+outputGain=-1.81
+overlapLength=10

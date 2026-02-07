@@ -38,58 +38,58 @@ color_scheme=6
 
 # Custom color definitions using template variables
 # Main interface colors
-color_background=#191113
-color_text=#efdfe1
-color_highlight=#ffb1c5
-color_selected=#261d1f
+color_background=#1a1112
+color_text=#f0dede
+color_highlight=#ffb2b7
+color_selected=#271d1e
 
 # CPU meter colors (gradient)
 color_cpu_low=#ffd8c5
-color_cpu_med=#ffedec
-color_cpu_high=#fe94b2
+color_cpu_med=#ffedea
+color_cpu_high=#ff95a2
 
 # Memory meter colors
-color_mem_used=#f6a2da
-color_mem_buffers=#dedcff
+color_mem_used=#fea0cd
+color_mem_buffers=#ffdb94
 color_mem_cache=#f2b2f2
 color_mem_available=#ffd8c5
 
 # Process list colors
-color_process_normal=#efdfe1
+color_process_normal=#f0dede
 color_process_running=#ffd8c5
-color_process_sleeping=#9e8c90
-color_process_zombie=#fe94b2
-color_process_stopped=#ffedec
+color_process_sleeping=#9f8c8d
+color_process_zombie=#ff95a2
+color_process_stopped=#ffedea
 
 # Header and border colors
-color_header=#d6c2c5
-color_border=#9e8c90
-color_separator=#514346
+color_header=#d7c1c2
+color_border=#9f8c8d
+color_separator=#524344
 
 # Function key colors
-color_function_key=#eebd92
-color_function_desc=#efdfe1
+color_function_key=#e7c08e
+color_function_desc=#f0dede
 
 # Tree view colors
-color_tree_line=#9e8c90
-color_tree_collapsed=#ffb1c5
-color_tree_expanded=#e3bdc5
+color_tree_line=#9f8c8d
+color_tree_collapsed=#ffb2b7
+color_tree_expanded=#e6bdbe
 
 # Load average colors
 color_load_low=#ffd8c5
-color_load_med=#ffedec
-color_load_high=#fe94b2
+color_load_med=#ffedea
+color_load_high=#ff95a2
 
 # Priority colors
-color_priority_high=#fe94b2
-color_priority_normal=#efdfe1
-color_priority_low=#9e8c90
+color_priority_high=#ff95a2
+color_priority_normal=#f0dede
+color_priority_low=#9f8c8d
 
 # Swap meter colors
-color_swap_used=#f4aabb
-color_swap_cache=#ffbdc2
+color_swap_used=#f8aab0
+color_swap_cache=#ffbdb9
 
 # Temperature colors (if enabled)
 color_temp_cool=#ffd8c5
-color_temp_warm=#ffedec
-color_temp_hot=#fe94b2
+color_temp_warm=#ffedea
+color_temp_hot=#ff95a2

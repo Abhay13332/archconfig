@@ -279,6 +279,16 @@
         "enabled": true,
         "icon": "wallet",
         "name": "live wallpaper"
+      }, {
+        "command": [  "hyprctl",
+          "dispatch",
+          "exec",
+          "wallhell-daemon &"],
+        "dangerous": false,
+        "description": "run wallhell daemon",
+        "enabled": true,
+        "icon": "Skull",
+        "name": "wallhell"
       },
       {
         "command": [
