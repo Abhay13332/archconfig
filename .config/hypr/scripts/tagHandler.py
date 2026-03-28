@@ -13,7 +13,7 @@ for i in array:
 
 maxm=pow(2,len(current_tagset))
 print(maxm)
-alltagarray=["nobar","noborder"]
+alltagarray=["nobar","noborder","noshadow","noblur"]
 
 for i in range(0,len(alltagarray)):
     if alltagarray[i] not in current_tagset:

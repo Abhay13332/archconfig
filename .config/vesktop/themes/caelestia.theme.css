@@ -10,8 +10,10 @@
 */
 @import url("https://refact0r.github.io/midnight-discord/build/midnight.css");
 body {
-  /* font, change to '' for default discord font */
-  --font: "figtree";
+  /* font options */
+  --font: "figtree"; /* change to '' for default discord font */
+  --code-font: "JetBrainsMono NF"; /* change to '' for default discord font */
+  font-weight: 400; /* normal text font weight. DOES NOT AFFECT BOLD TEXT */
   /* sizes */
   --gap: 12px; /* spacing between panels */
   --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
@@ -20,21 +22,22 @@ body {
   --animations: on; /* turn off to disable all midnight animations/transitions */
   --list-item-transition: 0.2s ease; /* transition for list items */
   --dms-icon-svg-transition: 0.4s ease; /* transition for the dms icon */
+  --border-hover-transition: 0.2s ease; /* transition for borders when hovered */
   /* top bar options */
   --top-bar-height: var(
       --gap
   ); /* height of the titlebar/top bar (discord default is 36px, 24px recommended if moving/hiding top bar buttons) */
-  --top-bar-button-position: hide; /* off: default position, hide: hide inbox/support buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to titlebar (will hide title) */
-  --top-bar-title-position: hide; /* off: default centered position, hide: hide title completely, left: left align title (like old discord) */
+  --top-bar-button-position: titlebar; /* off: default position, hide: hide inbox/support buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to titlebar (will hide title) */
+  --top-bar-title-position: off; /* off: default centered position, hide: hide title completely, left: left align title (like old discord) */
   --subtle-top-bar-title: off; /* off: default, on: hide the icon and use subtle text color (like old discord) */
   /* window controls */
   --custom-window-controls: on; /* turn off to use discord default window controls */
   --window-control-size: 14px; /* size of custom window controls */
   /* dms button icon options */
   --custom-dms-icon: custom; /* off: use default discord icon, hide: remove icon entirely, custom: use custom icon */
-  --dms-icon-svg-url: url("https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg"); /* icon svg url. MUST BE A SVG. */
+  --dms-icon-svg-url: url("https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg"); /* icon svg url. MUST BE A SVG. */
   --dms-icon-svg-size: 90%; /* size of the svg (css mask-size) */
-  --dms-icon-color-before: var(--icon-secondary); /* normal icon color */
+  --dms-icon-color-before: var(--icon-subtle); /* normal icon color */
   --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
   /* dms button background options */
   --custom-dms-background: off; /* off to disable, image to use a background image (must set url variable below), color to use a custom color/gradient */
@@ -55,34 +58,33 @@ body {
   --remove-bg-layer: off; /* turn on to remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
   --panel-blur: off; /* turn on to blur the background of panels */
   --blur-amount: 12px; /* amount of blur */
-  --bg-floating: #1a1112; /* you can set this to a more opaque color if floating panels look too transparent */
+  --bg-floating: #1a120d; /* you can set this to a more opaque color if floating panels look too transparent */
   /* chatbar options */
-  --custom-chatbar: aligned; /* off: default chatbar, aligned: chatbar aligned with the user panel, separated: chatbar separated from chat */
-  --chatbar-height: 47px; /* height of the chatbar (52px by default, 47px recommended for aligned, 56px recommended for separated) */
-  --chatbar-padding: 8px; /* padding of the chatbar. only applies in aligned mode. */
+  --custom-chatbar: off; /* off: default chatbar, separated: chatbar separated from chat */
+  --chatbar-height: 47px; /* height of the chatbar (56px by default, 47px to align with user panel, 56px recommended for separated) */
   /* other options */
-  --small-user-panel: off; /* turn on to make the user panel smaller like in old discord */
+  --small-user-panel: off; /* off: default user panel, on: smaller user panel like in old discord */
 }
 
 /* color options */
 :root {
   --colors: on; /* turn off to use discord default colors */
   /* text colors */
-  --text-0: #561d24; /* text on colored elements */
-  --text-1: rgb(241.5, 225.3, 225.3); /* bright text on colored elements */
-  --text-2: rgb(240.75, 223.65, 223.65); /* headings and important text */
-  --text-3: #f0dede; /* normal text */
-  --text-4: #9f8c8d; /* icon buttons and channels */
-  --text-5: #9f8c8d; /* muted channels/chats and timestamps */
+  --text-0: #532201; /* text on colored elements */
+  --text-1: rgb(241.5, 226.2, 219); /* bright text on colored elements */
+  --text-2: rgb(240.75, 224.6, 217); /* headings and important text */
+  --text-3: #f0dfd7; /* normal text */
+  --text-4: #9f8d84; /* icon buttons and channels */
+  --text-5: #9f8d84; /* muted channels/chats and timestamps */
   /* background and dark colors */
-  --bg-1: #3d3233; /* dark buttons when clicked */
-  --bg-2: #312828; /* dark buttons */
-  --bg-3: #1a1112; /* spacing, secondary elements */
-  --bg-4: #271d1e; /* main background color */
-  --hover: rgba(240, 222, 222, 0.08); /* channels and buttons when hovered */
-  --active: rgba(240, 222, 222, 0.1); /* channels and buttons when clicked or selected */
-  --active-2: rgba(240, 222, 222, 0.2); /* extra state for transparent buttons */
-  --message-hover: rgba(240, 222, 222, 0.08); /* messages when hovered */
+  --bg-1: #3d332e; /* dark buttons when clicked */
+  --bg-2: #322823; /* dark buttons */
+  --bg-3: #1a120d; /* spacing, secondary elements */
+  --bg-4: #271e19; /* main background color */
+  --hover: rgba(240, 223, 215, 0.08); /* channels and buttons when hovered */
+  --active: rgba(240, 223, 215, 0.1); /* channels and buttons when clicked or selected */
+  --active-2: rgba(240, 223, 215, 0.2); /* extra state for transparent buttons */
+  --message-hover: rgba(240, 223, 215, 0.08); /* messages when hovered */
   /* accent colors */
   --accent-1: var(--blue-1); /* links and other accent text */
   --accent-2: var(--blue-2); /* small accent elements */
@@ -117,33 +119,33 @@ body {
   --streaming: var(--purple-2); /* change to #593695 for default */
   --offline: var(--text-4); /* change to #83838b for default offline color */
   /* border colors */
-  --border-light: rgba(159, 140, 141, 0); /* light border color */
-  --border: rgba(159, 140, 141, 0.2); /* normal border color */
-  --button-border: rgba(159, 140, 141, 0); /* neutral border color of buttons */
+  --border-light: rgba(159, 141, 132, 0); /* light border color */
+  --border: rgba(159, 141, 132, 0.2); /* normal border color */
+  --button-border: rgba(159, 141, 132, 0); /* neutral border color of buttons */
   /* base colors */
   --red-1: #ffb4ab;
   --red-2: rgb(255, 160.9821428571, 149.7);
   --red-3: rgb(255, 141.9642857143, 128.4);
   --red-4: rgb(255, 122.9464285714, 107.1);
   --red-5: rgb(255, 103.9285714286, 85.8);
-  --green-1: #ffd8c5;
-  --green-2: rgb(255, 200.8034482759, 174.4);
-  --green-3: rgb(255, 185.6068965517, 151.8);
-  --green-4: rgb(255, 170.4103448276, 129.2);
-  --green-5: rgb(255, 155.2137931034, 106.6);
-  --blue-1: #ffb2b7;
-  --blue-2: rgb(255, 156.35, 162.7558441558);
-  --blue-3: rgb(255, 134.7, 142.5116883117);
-  --blue-4: rgb(255, 113.05, 122.2675324675);
-  --blue-5: rgb(255, 91.4, 102.0233766234);
-  --yellow-1: #ffedea;
-  --yellow-2: rgb(255, 216.0428571429, 209.55);
-  --yellow-3: rgb(255, 195.0857142857, 185.1);
-  --yellow-4: rgb(255, 174.1285714286, 160.65);
-  --yellow-5: rgb(255, 153.1714285714, 136.2);
-  --purple-1: #ffa7c1;
-  --purple-2: rgb(255, 145.9, 178.1340909091);
-  --purple-3: rgb(255, 124.8, 163.2681818182);
-  --purple-4: rgb(255, 103.7, 148.4022727273);
-  --purple-5: rgb(255, 82.6, 133.5363636364);
+  --green-1: #ffd9b4;
+  --green-2: rgb(255, 205.98, 158.25);
+  --green-3: rgb(255, 194.96, 136.5);
+  --green-4: rgb(255, 183.94, 114.75);
+  --green-5: rgb(255, 172.92, 93);
+  --blue-1: #ffb68e;
+  --blue-2: rgb(255, 169.1765486726, 122.15);
+  --blue-3: rgb(255, 156.3530973451, 102.3);
+  --blue-4: rgb(255, 143.5296460177, 82.45);
+  --blue-5: rgb(255, 130.7061946903, 62.6);
+  --yellow-1: #ffeee4;
+  --yellow-2: rgb(255, 222.7944444444, 203.85);
+  --yellow-3: rgb(255, 207.5888888889, 179.7);
+  --yellow-4: rgb(255, 192.3833333333, 155.55);
+  --yellow-5: rgb(255, 177.1777777778, 131.4);
+  --purple-1: #ffab9d;
+  --purple-2: rgb(255, 153.3428571429, 136.4);
+  --purple-3: rgb(255, 135.6857142857, 115.8);
+  --purple-4: rgb(255, 118.0285714286, 95.2);
+  --purple-5: rgb(255, 100.3714285714, 74.6);
 }

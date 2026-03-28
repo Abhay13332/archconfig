@@ -1,0 +1,8 @@
+# OmenCore Configuration
+# Generated: 2026-02-25 23:41:30
+
+start_minimized = false
+dark_theme = true
+polling_interval_ms = 1000
+auto_apply_profile = true
+default_performance_mode = "balanced"

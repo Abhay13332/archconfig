@@ -27,7 +27,11 @@ Examples of what you can add:
 - Multi-reddit: wallpaper+wallpapers+EarthPorn
 - Multi URL: https://www.reddit.com/r/wallpaper+wallpapers+EarthPorn/top/?t=week
 """
-
+import sys
+import os
+plugin_dir = os.path.dirname(os.path.realpath(__file__))
+if plugin_dir not in sys.path:
+    sys.path.append(plugin_dir)
 import logging
 
 from variety.plugins.downloaders.ConfigurableImageSource import ConfigurableImageSource
@@ -38,7 +42,7 @@ try:
     from CustomRedditDownloader import CustomRedditDownloader
 except ImportError:
     # Fallback for different import contexts
-    from variety.plugins.CustomRedditDownloader import CustomRedditDownloader
+    from .CustomRedditDownloader import CustomRedditDownloader
 
 logger = logging.getLogger("variety")
 

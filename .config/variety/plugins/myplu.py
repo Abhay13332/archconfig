@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import requests
-from variety import VarietyPlugin
-
+from variety.plugins import VarietyPlugin
 metadata = {
     "name": "Reddit Wallpaper Fetcher",
     "description": "Fetch top wallpapers from r/wallpaper",

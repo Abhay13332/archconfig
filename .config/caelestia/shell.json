@@ -21,6 +21,8 @@
       }
     },
     "anim": {
+      "mediaGifSpeedAdjustment": 300,
+      "sessionGifSpeed": 0.7,
       "durations": {
         "scale": 1
       }
@@ -32,6 +34,7 @@
     }
   },
   "general": {
+    "logo": "",
     "apps": {
       "terminal": [
         "foot"
@@ -95,8 +98,22 @@
   },
   "background": {
     "enabled": false,
+    "wallpaperEnabled": true,
     "desktopClock": {
-      "enabled": true
+      "enabled": true,
+      "scale": 1,
+      "position": "bottom-right",
+      "invertColors": false,
+      "background": {
+        "enabled": false,
+        "opacity": 0.7,
+        "blur": true
+      },
+      "shadow": {
+        "enabled": true,
+        "opacity": 0.7,
+        "blur": 0.4
+      }
     },
     "visualiser": {
       "enabled": true,
@@ -145,6 +162,7 @@
       "showMicrophone": false,
       "showKbLayout": false,
       "showNetwork": true,
+      "showWifi": true,
       "showBluetooth": true,
       "showBattery": true,
       "showLockStatus": true
@@ -196,7 +214,8 @@
         "enabled": true,
         "id": "power"
       }
-    ]
+    ],
+    "excludedScreens": []
   },
   "border": {
     "thickness": 6,
@@ -205,8 +224,15 @@
   "dashboard": {
     "enabled": true,
     "showOnHover": true,
-    "mediaUpdateInterval": 500,
     "dragThreshold": 50,
+    "performance": {
+      "showBattery": true,
+      "showGpu": true,
+      "showCpu": true,
+      "showMemory": true,
+      "showStorage": true,
+      "showNetwork": true
+    },
     "sizes": {
       "tabIndicatorHeight": 3,
       "tabIndicatorSpacing": 5,
@@ -239,6 +265,7 @@
     "enableDangerousActions": false,
     "dragThreshold": 50,
     "vimKeybinds": false,
+    "favouriteApps": [],
     "hiddenApps": [],
     "useFuzzy": {
       "apps": false,
@@ -268,22 +295,26 @@
         "name": "Clear Cache"
       },
       {
-        "command": [  "hyprctl",
+        "command": [
+          "hyprctl",
           "dispatch",
           "exec",
           "~/.scripts/mpvpaper/set_video_wallpaper_playlist.sh",
           "https://www.youtube.com/playlist?list=PLm6P5omtoDSCpc82qR8R5Tj-IpythzGey&jct=MnQbNkECFbT7W4RxTYRnog"
-      ],
+        ],
         "dangerous": false,
         "description": "change live wallpaper",
         "enabled": true,
         "icon": "wallet",
         "name": "live wallpaper"
-      }, {
-        "command": [  "hyprctl",
+      },
+      {
+        "command": [
+          "hyprctl",
           "dispatch",
           "exec",
-          "wallhell-daemon &"],
+          "wallhell-daemon &"
+        ],
         "dangerous": false,
         "description": "run wallhell daemon",
         "enabled": true,
@@ -581,6 +612,7 @@
     "gpuType": "",
     "visualiserBars": 45,
     "audioIncrement": 0.1,
+    "brightnessIncrement": 0.1,
     "maxVolume": 1,
     "smartScheme": true,
     "defaultPlayer": "Spotify",

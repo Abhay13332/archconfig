@@ -14,6 +14,7 @@ application/x-shellscript=code.desktop
 text/plain=code.desktop
 x-scheme-handler/about=brave-browser.desktop
 x-scheme-handler/unknown=brave-browser.desktop
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
 
 [Added Associations]
 x-scheme-handler/http=zen.desktop;
@@ -22,3 +23,4 @@ text/html=zen.desktop;
 application/x-shellscript=code.desktop;
 text/plain=code.desktop;
 x-scheme-handler/chrome=zen.desktop;
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;

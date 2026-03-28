@@ -2,5 +2,6 @@
 attack=2000
 curveThreshold=-40
 curveZone=-40
-reduction=-30
-release=2000
+reduction=-31.21
+release=1999.76
+sidechainPreamp=0.09

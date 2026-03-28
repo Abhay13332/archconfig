@@ -16,3 +16,13 @@ output_path = '~/.config/gtk-4.0/colors.css'
 [templates.hamr]
 input_path = "~/.config/matugen/templates/hamr-colors.json"
 output_path = "~/.config/hamr/colors.json"
+
+[templates.zathura]
+input_path = '~/.config/matugen/templates/zathura'
+output_path = '~/.config/zathura/zathurarc_matugen'
+
+
+[templates.vscode]
+input_path  = '~/.config/matugen/templates/vscode-settings.json'
+output_path = '/home/abhay/.config/Code/User/matugen-vscode-settings.json'
+post_hook   = 'python3 /home/abhay/.config/matugen/merge_vscode_settings.py /home/abhay/.config/Code/User/settings.json /home/abhay/.config/Code/User/matugen-vscode-settings.json'
