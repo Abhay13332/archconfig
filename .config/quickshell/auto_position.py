@@ -1,6 +1,7 @@
 import sys
 import os
 from PIL import Image, ImageFilter
+from typing import List, Any, cast
 
 WIDGET_SIZE = 300
 SCREEN_W = 1920
@@ -28,9 +29,9 @@ def find_best_spot(wallpaper_path):
         small_w = int(SCREEN_W * scale)
         small_h = int(SCREEN_H * scale)
 
-        small_edges = edges.resize((small_w, small_h), resample=Image.BILINEAR)
+        small_edges = edges.resize((small_w, small_h), resample=Image.Resampling.BILINEAR)
 
-        pixels = list(small_edges.getdata())
+        pixels = list(cast(List[Any], small_edges.getdata()))
         width = small_w
 
         w_scaled = int(WIDGET_SIZE * scale)
@@ -71,7 +72,7 @@ def find_best_spot(wallpaper_path):
     except Exception:
         return clamp_inside(PADDING, PADDING)
 
-
+import os
 if __name__ == "__main__":
     if len(sys.argv) >= 3:
         try:
@@ -79,8 +80,7 @@ if __name__ == "__main__":
             SCREEN_H = int(float(sys.argv[2]))
         except:
             pass
-
-    path_file = "/home/jay/.local/state/caelestia/wallpaper/path.txt"
+    path_file=os.path.expanduser("~/.local/state/caelestia/wallpaper/path.txt")
 
     if os.path.exists(path_file):
         wp_path = open(path_file).read().strip()

@@ -1,0 +1,111 @@
+{
+	"notifications": [
+		{
+			"guid": "e710214a-2414-4e63-b887-c1ee0f1f51b3",
+			"timestamp": 1774895219129,
+			"read": true,
+			"displayState": "background",
+			"notification": {
+				"message": "How was your experience installing Docker Desktop?",
+				"icon": "campaign",
+				"type": "feedback",
+				"ephemeral": false,
+				"actionText": "Give feedback",
+				"action": {
+					"action": "open-external-url",
+					"params": {
+						"url": "https://docker.qualtrics.com/jfe/form/SV_6AaVyp25bygjirY?DD_Version=4.66.1&Mode=local&Tab=Install%2BComplete&OS=Linux"
+					}
+				}
+			}
+		},
+		{
+			"guid": "95af91a3-9a41-4617-bc5d-df866290d84d",
+			"timestamp": 1774895441734,
+			"read": true,
+			"displayState": "background",
+			"notification": {
+				"message": "Failed to run image. (HTTP code 400) bad parameter - create ~/.local/share/postgres: \"~/.local/share/postgres\" includes invalid characters for a local volume name, only \"[a-zA-Z0-9][a-zA-Z0-9_.-]\" are allowed. If you intended to pass a host directory, use absolute path ",
+				"icon": "error",
+				"type": "error",
+				"ephemeral": false
+			}
+		},
+		{
+			"guid": "3069301a-d579-4c4f-b97d-aadc90016deb",
+			"timestamp": 1775049920087,
+			"read": false,
+			"displayState": "background",
+			"notification": {
+				"message": "starting kubernetes: Context Cancelled: context canceled",
+				"icon": "error",
+				"type": "error",
+				"ephemeral": false
+			}
+		},
+		{
+			"guid": "b72e05aa-d8e1-402d-8494-94df40f0d4c4",
+			"timestamp": 1775049920104,
+			"read": false,
+			"displayState": "background",
+			"notification": {
+				"message": "Unable to start a cluster. Try again.",
+				"icon": "error",
+				"type": "error",
+				"title": "Kubernetes",
+				"ephemeral": false
+			}
+		},
+		{
+			"guid": "79da69df-2754-4817-a285-2a48411a3008",
+			"timestamp": 1775732076078,
+			"read": false,
+			"displayState": "background",
+			"notification": {
+				"ephemeral": false,
+				"icon": "download",
+				"message": "Docker Desktop 4.68.0 is available.",
+				"actionText": "Download",
+				"action": {
+					"action": "update-available",
+					"params": {
+						"targetVersion": "4.68.0"
+					}
+				},
+				"type": "update"
+			}
+		},
+		{
+			"guid": "bc67eae5-616c-49bf-beb4-daf675d4cbde",
+			"timestamp": 1775732076398,
+			"read": false,
+			"displayState": "background",
+			"notification": {
+				"message": "Sign in to share images and collaborate with your team",
+				"icon": "disconnected",
+				"type": "action-result",
+				"operation": "user-log-in",
+				"ephemeral": false,
+				"title": "You are signed out",
+				"actionText": "Sign in",
+				"action": {
+					"action": "open-login",
+					"params": {}
+				}
+			}
+		},
+		{
+			"guid": "00666e5d-61f4-4812-b687-60505668c904",
+			"timestamp": 1775732086256,
+			"read": false,
+			"displayState": "background",
+			"notification": {
+				"message": "Desktop cluster successfully started",
+				"icon": "success",
+				"type": "general-purpose",
+				"title": "Kubernetes",
+				"ephemeral": false
+			}
+		}
+	]
+}

@@ -38,19 +38,31 @@ PanelWindow {
         // Complex command to:
         // 1. Define extractor function to print "BG FG X Y"
         // 2. Watch directory
-        command: ["sh", "-c", "
-            extract() { 
-                bg=$(grep '^\\$background =' ~/.config/hypr/scheme/current.conf | cut -d'=' -f2 | tr -d ' ')
-                fg=$(grep '^\\$primary =' ~/.config/hypr/scheme/current.conf | cut -d'=' -f2 | tr -d ' ')
-                res=$(hyprctl monitors -j | jq -r '.[0] | \"\\(.width) \\(.height)\"')
-                coords=$(python3 ~/.config/quickshell/auto_position.py $res)
-                echo \"$bg $fg $coords\"
-            }
-            extract
-            inotifywait -m -e close_write -q --format '%f' ~/.config/hypr/scheme/ | while read -r file; do
-                if [ \"$file\" = \"current.conf\" ]; then extract; fi
-            done
-        "]
+       command: [
+        "sh", "-c", 
+        `
+        HYPR_THEME_PATH="$HOME/.config/hypr/scheme/current.conf"
+        HYPR_DIR=$(dirname "$HYPR_THEME_PATH")
+        SCRIPT_PATH="${Quickshell.shellPath("auto_position.py")}"
+
+        extract() { 
+            # Note: space added after '=' in grep to match your config style
+            bg=$(grep '^\\$background =' "$HYPR_THEME_PATH" | cut -d'=' -f2 | tr -d ' ')
+            fg=$(grep '^\\$primary =' "$HYPR_THEME_PATH" | cut -d'=' -f2 | tr -d ' ')
+            res=$(hyprctl monitors -j | jq -r '.[0] | "\\(.width) \\(.height)"')
+            coords=$(python3 "$SCRIPT_PATH" $res)
+            echo "$bg $fg $coords"
+        }
+
+        extract
+        
+        inotifywait -m -e close_write -q --format '%f' "$HYPR_DIR" | while read -r file; do
+            if [ "$file" = "current.conf" ]; then 
+                extract
+            fi
+        done
+        `
+    ]
         
         stdout: SplitParser {
             onRead: function(data) {

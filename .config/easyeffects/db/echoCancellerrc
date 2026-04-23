@@ -1,0 +1,5 @@
+[soe][EchoCanceller#0]
+enableEchoCanceller=false
+enableNoiseSuppression=false
+noiseSuppressionLevel=0
+outputGain=1.53

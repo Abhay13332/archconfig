@@ -1,7 +1,7 @@
 {
     "name": "Untitled",
     "DesktopAudioDevice1": {
-        "prev_ver": 536936448,
+        "prev_ver": 536936449,
         "name": "Desktop Audio",
         "uuid": "dea7112d-6d5f-43e9-bc17-b2f04fe5ca44",
         "id": "pulse_output_capture",
@@ -32,7 +32,7 @@
         "private_settings": {}
     },
     "DesktopAudioDevice2": {
-        "prev_ver": 536936448,
+        "prev_ver": 536936449,
         "name": "Desktop Audio 2",
         "uuid": "ed1525af-8e02-493c-a3f7-08cbfa6e64a5",
         "id": "pulse_output_capture",
@@ -63,7 +63,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 536936448,
+        "prev_ver": 536936449,
         "name": "Mic/Aux",
         "uuid": "32177a3f-108e-407a-929b-7a74fed463ed",
         "id": "pulse_input_capture",
@@ -94,7 +94,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice2": {
-        "prev_ver": 536936448,
+        "prev_ver": 536936449,
         "name": "Mic/Aux 2",
         "uuid": "1d21a81f-80be-462b-874e-8b38b2e1432b",
         "id": "pulse_input_capture",
@@ -125,7 +125,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice3": {
-        "prev_ver": 536936448,
+        "prev_ver": 536936449,
         "name": "Mic/Aux 3",
         "uuid": "2beb4f72-efd1-4c4a-acb4-c4e169a8ccdb",
         "id": "pulse_input_capture",
@@ -156,7 +156,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice4": {
-        "prev_ver": 536936448,
+        "prev_ver": 536936449,
         "name": "Mic/Aux 4",
         "uuid": "d6a7fb93-3f0f-43b3-9c38-fe36a4214a8c",
         "id": "pulse_input_capture",
@@ -188,7 +188,7 @@
     },
     "sources": [
         {
-            "prev_ver": 536936448,
+            "prev_ver": 536936449,
             "name": "Screen Capture (PipeWire)",
             "uuid": "f7df2d0d-0ba9-4f4b-81c4-153aa7e2691c",
             "id": "pipewire-screen-capture-source",
@@ -214,7 +214,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536936448,
+            "prev_ver": 536936449,
             "name": "Scene",
             "uuid": "28427bee-4151-42b8-be48-ad8b5162e875",
             "id": "scene",

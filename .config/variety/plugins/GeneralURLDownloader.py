@@ -28,6 +28,7 @@ import logging
 import random
 import re
 
+from bs4 import BeautifulSoup
 from variety.plugins.downloaders.DefaultDownloader import DefaultDownloader
 from variety.Util import Util
 
@@ -59,7 +60,10 @@ class GeneralURLDownloader(DefaultDownloader):
         Returns list of image URLs found on the page.
         """
         try:
-            soup = Util.html_soup(url)
+            import requests
+
+            response = requests.get(url)
+            soup = BeautifulSoup(response.text, 'html.parser')
             image_urls = []
 
             # Find all img tags

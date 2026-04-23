@@ -47,3 +47,6 @@ end
 
 # opencode
 fish_add_path /home/abhay/.opencode/bin
+
+# uv
+fish_add_path "/home/abhay/.local/share/../bin"
