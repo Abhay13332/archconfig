@@ -1,3 +1,3 @@
-2026/04/16-18:39:53.939 80fd1 Reusing MANIFEST /home/abhay/.config/obsidian/Local Storage/leveldb/MANIFEST-000001
-2026/04/16-18:39:53.945 80fd1 Recovering log #3
-2026/04/16-18:39:53.945 80fd1 Reusing old log /home/abhay/.config/obsidian/Local Storage/leveldb/000003.log 
+2026/04/28-17:20:20.690 240c Reusing MANIFEST /home/abhay/.config/obsidian/Local Storage/leveldb/MANIFEST-000001
+2026/04/28-17:20:20.698 240c Recovering log #3
+2026/04/28-17:20:20.698 240c Reusing old log /home/abhay/.config/obsidian/Local Storage/leveldb/000003.log 

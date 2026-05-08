@@ -15,6 +15,8 @@ text/plain=code.desktop
 x-scheme-handler/about=brave-browser.desktop
 x-scheme-handler/unknown=brave-browser.desktop
 application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
+x-scheme-handler/simple-music=simple-music.desktop
+x-scheme-handler/discord-1430114242815725579=playtorrio.desktop
 
 [Added Associations]
 x-scheme-handler/http=zen.desktop;

@@ -29,7 +29,7 @@
     },
     "transparency": {
       "enabled": true,
-      "base": 0.85,
+      "base": 0.850124838917526,
       "layers": 0.18079091494845362
     }
   },
@@ -55,20 +55,33 @@
       "inhibitWhenAudio": true,
       "timeouts": [
         {
-          "idleAction": "lock",
-          "timeout": 180
+          "idleAction": [
+            "brightnessctl",
+            "-s",
+            "set",
+            "10"
+          ],
+          "returnAction": [
+            "brightnessctl",
+            "-r"
+          ],
+          "timeout": 300
         },
         {
-          "idleAction": "dpms off",
-          "returnAction": "dpms on",
-          "timeout": 300
+          "idleAction": "lock",
+          "timeout": 600
+        },
+        {
+          "idleAction": " dpms off",
+          "returnAction": " dpms on",
+          "timeout": 900
         },
         {
           "idleAction": [
             "systemctl",
-            "suspend-then-hibernate"
+            "suspend"
           ],
-          "timeout": 600
+          "timeout": 1800
         }
       ]
     },
@@ -284,7 +297,7 @@
           "hyprctl",
           "dispatch",
           "exec",
-          "~/.scripts/mpvpaper/set_video_wallpaper_playlist.sh",
+          "~/.scripts/mpvpaper/set_video_wallpaper_playlist.py",
           "https://www.youtube.com/playlist?list=PLm6P5omtoDSCpc82qR8R5Tj-IpythzGey&jct=MnQbNkECFbT7W4RxTYRnog"
         ],
         "dangerous": false,
@@ -311,7 +324,7 @@
           "hyprctl",
           "dispatch",
           "exec",
-          "~/.scripts/mpvpaper/set_video_wallpaper.sh"
+          "~/.scripts/mpvpaper/set_video_wallpaper.py"
         ],
         "dangerous": false,
         "description": "change live wallpaper to your choice",

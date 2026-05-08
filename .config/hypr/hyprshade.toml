@@ -1,0 +1,11 @@
+[[shades]]
+name = "color_fix"
+default = true
+
+# Add a dummy schedule or a real one to satisfy systemd
+[[shades]]
+name = "color_fix"
+start_time = 06:00:00
+end_time = 05:59:59
+
+ 
